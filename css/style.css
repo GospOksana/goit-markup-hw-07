@@ -83,11 +83,11 @@ header{
     display: flex;
     margin-left: 94px ;
 }
-.nav-list .item + .item{
+.nav-list__item:not(:first-child){
     margin-left: 50px;
 }
-.nav-list .link,
-.nav-contact .link{
+.nav-list__link,
+.nav-contact__link{
     display: flex;
     align-items: center;
     color: var(--secondary-color-text);
@@ -96,7 +96,7 @@ header{
     line-height: 1.14;
     text-decoration: none;
 }
-.nav-list .link{
+.nav-list__link{
     position: relative;
     display: block;
     padding-top: 32px;
@@ -104,10 +104,10 @@ header{
     color: var(--prymary-color-text);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-list .link.current{
+.nav-list__link.nav-list__current{
     color: var(--accent-color);
 }
-.current::after{
+.nav-list__current::after{
     content: '';
     display: block;
     position: absolute;
@@ -124,23 +124,23 @@ header{
     margin-left: auto;
     
 }
-.nav-contact .item{
+.nav-contact__item{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.nav-contact .item + .item{
+.nav-contact__item:not(:first-child){
     margin-left: 50px;
 }
-.nav-list .link:hover,
-.nav-list .link:focus,
-.nav-contact .link:hover,
-.nav-contact .link:focus{
+.nav-list__link:hover,
+.nav-list__link:focus,
+.nav-contact__link:hover,
+.nav-contact__link:focus{
     color: var(--accent-color);
     /* fill: var(--accent-color); */
     
    }
-.contact-svg{
+.nav-contact__svg{
     margin-right: 10px;
     fill: currentColor;
 }
@@ -159,7 +159,7 @@ header{
     max-width: 1600px;
     text-align: center;
 }
-.banner-title{
+.banner__title{
     max-width: 696px;
     margin-bottom: 30px;
     margin-left: auto;
@@ -172,7 +172,7 @@ header{
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
-.button{
+.banner__button{
     padding: 10px 32px;
     color: var(--prymary-white-color);
     background-color: var(--accent-color);
@@ -189,19 +189,16 @@ header{
 }
 /* Наші переваги */
 .advantage{
-    
-}
-.advantage-list{
     display: flex;
 }
-.advantage-list .list-item{
+.advantage-item{
     width: 270px;
     margin-right: 30px;
 }
-.advantage-list .list-item:last-child{
+.advantage-item:last-child{
     margin-right: 0;
 }
-.list-item-svg{
+.advantage-block{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -213,18 +210,15 @@ header{
 .advantage-svg{
     display: block;
 }
-.advantage-list .list-title{
+.advantage-title{
     color: var(--prymary-color-text);
     font-size: 14px;
-}
-
-.advantage-list .list-title{
     margin-bottom: 10px;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
 }
-.advantage-list .list-text{
+.advantage-text{
     font-weight: 400;
     line-height: 1.71;
 }
