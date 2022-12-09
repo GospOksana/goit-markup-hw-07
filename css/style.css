@@ -229,19 +229,19 @@ header{
 .education-list{
     display: flex;
 }
-.education-list-item{
+.education-list__item{
     position: relative;
 }
-.education-list-item img{
+.education-list__item img{
     
     display: block;
     max-width: 100%;
     height: auto;
 }
-.education-list-item:not(:last-child){
+.education-list__item:not(:last-child){
     margin-right: 30px;
 }
-.education-list-p{
+.education-list__label{
     position: absolute;
     left: 0;
     bottom: 0;
@@ -257,7 +257,7 @@ header{
     line-height: 1.21;
     text-transform: uppercase;
 }
-.education-title{
+.education__title{
     margin-bottom: 50px;
 }
 
@@ -265,24 +265,24 @@ header{
 .team{
     background-color: var(--button-color);
 }
-.team-title{
+.team__title{
     margin-bottom: 50px;
 }
 .team-list{
     display: flex;
 }
-.team-list-item{
+.team-list__item{
     background-color: var(--prymary-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
-.team-list-item:not(:last-child){
+.team-list__item:not(:last-child){
     margin-right: 30px;
 }
-.team-list-img{
+.team-list__img{
     margin-bottom: 30px;
 }
-.team-list-title{
+.team-list__title{
     margin-bottom: 10px;
     color: var(--prymary-color-text);
     font-weight: 500;
@@ -290,7 +290,7 @@ header{
     line-height: 1.19;
     text-align: center;
 }
-.team-list-text{
+.team-list__text{
     margin-bottom: 16px;
     font-weight: 400;
     font-size: 16px;
@@ -304,7 +304,7 @@ header{
     margin-left: 32px;
     margin-right: 32px;
 }
-.team-social-item{
+.team-social__item{
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -312,7 +312,7 @@ header{
     height: 44px;
     
 }
-.link-social-svg{
+.team-social__link{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -322,13 +322,13 @@ header{
     border-radius: 50%;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link-social-svg:hover,
-.link-social-svg:focus{
+.team-social__link:hover,
+.team-social__link:focus{
     color: var(--prymary-white-color);
     background-color: var(--accent-color);
     
 }
-.team-svg{
+.team-social__svg{
     display: block;
     fill: currentColor;
 }
