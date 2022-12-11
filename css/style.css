@@ -333,22 +333,20 @@ header{
     fill: currentColor;
 }
 /*  Постійні клієнти */
-.client-title{
+.client__title{
     margin-bottom: 50px;
 }
 .client-list{
     display: flex;
     justify-content: space-between;
 }
-.client-list-item{
+.client-list__item{
     display: flex;
     justify-content: center;
-    align-items: center;
-    
-       
+    align-items: center;      
 }
 
-.client-item-svg{
+.client-list__link{
     display: flex;
     width: 170px;
     height: 92px;
@@ -359,12 +357,12 @@ header{
     color: var(--fiil-social-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.client-item-svg:hover,
-.client-item-svg:focus{
+.client-list__link:hover,
+.client-list__link:focus{
     border-color: var(--accent-color);
     color: var(--accent-color);
 }
-.client-svg{
+.client-list__svg{
     fill: currentColor;
 }
 /* footer */
@@ -386,17 +384,17 @@ footer .logo{
     margin-bottom: 20px;
     color: var(--prymary-white-color);
 }
-.address-text{
+.footer-address__text{
     margin-bottom: 9px;
     color: var(--prymary-white-color);
     font-weight: 400;
     line-height: 1.71;
     font-style: normal;
 }
-.address-list-item:not(:last-child){
+.address-list__item:not(:last-child){
     margin-bottom: 9px;
 }
-.address-list-link{
+.address-list__link{
     color: var(--secondary-white-color);
     font-weight: 400;
     line-height: 1.71;
@@ -406,7 +404,8 @@ footer .logo{
 .footer-social{
     margin-right: 93px;
 }
-.footer-social-text{
+.footer-social__text,
+.footer-subscript__text{
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
@@ -419,17 +418,17 @@ footer .logo{
     display: flex;
     justify-content: space-between;
 }
-.footer-social-item{
+.footer-social__item{
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
 
-.footer-social-item:not(:last-child){
+.footer-social__item:not(:last-child){
     margin-right: 10px;
 }
-.footer-social-link{
+.footer-social__link{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -441,12 +440,12 @@ footer .logo{
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
 }
-.footer-social-link:hover,
-.footer-social-link:focus{
+.footer-social__link:hover,
+.footer-social__link:focus{
     background-color: var(--accent-color);
 }
 
-.footer-svg{
+.footer-social__svg{
     fill: currentColor;
 }
 .subscript{
@@ -455,7 +454,7 @@ footer .logo{
 .form-subscript{
     display: flex;
 }
-.input-subscript{
+.form-subscript__input{
     width: 358px;
     height: 50px;
     padding-left: 15px;
@@ -468,7 +467,7 @@ footer .logo{
     font-size: 16px;
     line-height: 1.25;
 }
-.button-subscript{
+.form-subscript__button{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -485,7 +484,7 @@ footer .logo{
     line-height: 1.88;
     cursor: pointer;
 }
-.footer-button-svg{
+.form-subscript__svg{
     margin-left: 10px;
     fill: currentColor;
 }
@@ -499,10 +498,10 @@ footer .logo{
     justify-content: center;
     margin-bottom: 50px;
 }
-.filter-list-item:not(:last-child){
+.filter-list__item:not(:last-child){
     margin-right: 8px;
 }
-.filter-button{
+.filter-list__button{
     padding: 6px 22px;
     color: var(--prymary-color-text);
     background-color: var(--button-color);
@@ -516,8 +515,8 @@ footer .logo{
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.filter-button:hover,
-.filter-button:focus{
+.filter-list__button:hover,
+.filter-list__button:focus{
     color: var(--prymary-white-color);
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -527,39 +526,39 @@ footer .logo{
     flex-wrap: wrap;
     margin: -15px;
 }
-.examples-list-item{
+.examples-list__item{
     width: 370px;
     margin: 15px;
     background-color: var(--prymary-white-color);
     
 }
-.examples-list-link{
+.examples-list__link{
     display: block;
     text-decoration: none;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.examples-list-link:hover,
-.examples-list-link:focus{
+.examples-list__link:hover,
+.examples-list__link:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.examples-list-img{
+.examples-card__img{
     display: block;
     width: 100%;
     height: auto;
     object-fit: cover;
 }
-.examples-list-content{
+.examples-content{
     padding: 20px 24px;
     border-left: 1px solid var(--border-cart-color);
     border-bottom: 1px solid var(--border-cart-color);
     border-right: 1px solid var(--border-cart-color);
 }
-.examples-list-card{
+.examples-card{
     position: relative;
     overflow: hidden;
     width: 370px;
 }
-.examples-list-overflow{
+.examples-card-overflow{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -580,15 +579,15 @@ footer .logo{
     
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.examples-list-overflow > p{
+.examples-card-overflow > p{
  margin-left: 24px;
  margin-right: 24px;
 }
-.examples-list-link:hover .examples-list-overflow,
-.examples-list-link:focus .examples-list-overflow {
+.examples-list__link:hover .examples-card-overflow,
+.examples-list__link:focus .examples-card-overflow {
     transform: translate(0px, 0px);
 }
-.examples-list-title{
+.examples-content__title{
     color: var(--prymary-color-text);
     font-weight: 700;
     font-size: 18px;
@@ -596,7 +595,7 @@ footer .logo{
     letter-spacing: 0.06em;
     
 }
-.examples-list-text{
+.examples-content__text{
     color: var(--secondary-color-text);
     font-size: 16px;
     line-height: 1.88;
