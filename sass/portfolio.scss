@@ -1,0 +1,45 @@
+@import '../sass/utils/variables';
+body{
+    background-color: var(--prymary-white-color);
+    color:var(--secondary-color-text);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+/* Утиліти */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin: 0;
+}
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.container{
+    width: 1200px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.section-title{
+    color: $prymary-color-text;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+@import '../sass/components/header';
+@import '../sass/components/portfolio-filter';
+@import '../sass/components/portfolio-examples';
+@import '../sass/components/footer';
