@@ -1,8 +1,9 @@
 @import '../sass/utils/variables';
+@import '../sass/utils/placeholder';
 body{
-    background-color: var(--prymary-white-color);
-    color:var(--secondary-color-text);
-    font-family: 'Roboto', sans-serif;
+    background-color: $prymary-white-color;
+    color: $secondary-color-text;
+    font-family: $primary-font-family;
     font-size: 14px;
     letter-spacing: 0.03em;
 }
@@ -20,11 +21,7 @@ p{
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.list{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
+
 .container{
     width: 1200px;
     padding: 0 15px;
@@ -32,13 +29,7 @@ p{
     margin-right: auto;
     
 }
-.section-title{
-    color: $prymary-color-text;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-}
+
 @import '../sass/components/header';
 @import '../sass/components/portfolio-filter';
 @import '../sass/components/portfolio-examples';

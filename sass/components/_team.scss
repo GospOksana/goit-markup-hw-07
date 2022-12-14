@@ -2,9 +2,11 @@
     background-color: v$button-color;
 }
 .team__title{
+    @extend %section-title;
     margin-bottom: 50px;
 }
 .team-list{
+    @extend %list;
     display: flex;
 }
 .team-list__item{
@@ -19,6 +21,7 @@
     margin-bottom: 30px;
 }
 .team-list__title{
+    @extend %section-title;
     margin-bottom: 10px;
     color: $prymary-color-text;
     font-weight: 500;
@@ -34,6 +37,7 @@
     text-align: center;
 }
 .team-social{
+    @extend %list;
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;

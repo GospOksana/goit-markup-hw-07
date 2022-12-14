@@ -1,7 +1,9 @@
 .client__title{
+    @extend %section-title;
     margin-bottom: 50px;
 }
 .client-list{
+    @extend %list;
     display: flex;
     justify-content: space-between;
 }

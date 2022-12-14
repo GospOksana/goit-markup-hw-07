@@ -1,4 +1,5 @@
 .advantage{
+    @extend %list;
     display: flex;
 }
 .advantage-item{

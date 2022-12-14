@@ -23,6 +23,9 @@ footer .logo{
     line-height: 1.71;
     font-style: normal;
 }
+.address-list{
+    @extend %list;
+}
 .address-list__item:not(:last-child){
     margin-bottom: 9px;
 }
@@ -47,6 +50,7 @@ footer .logo{
 }
 
 .footer-social-list{
+    @extend %list;
     display: flex;
     justify-content: space-between;
 }

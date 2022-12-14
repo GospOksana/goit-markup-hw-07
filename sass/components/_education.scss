@@ -2,6 +2,7 @@
     padding-top: 0;
 }
 .education-list{
+    @extend %list;
     display: flex;
 }
 .education-list__item{
@@ -33,5 +34,6 @@
     text-transform: uppercase;
 }
 .education__title{
+    @extend %section-title;
     margin-bottom: 50px;
 }

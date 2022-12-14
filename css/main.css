@@ -1,7 +1,21 @@
 @charset "UTF-8";
+.footer-social-list, .address-list, .client-list, .team-social, .team-list, .education-list, .advantage, .nav-contact, .nav-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.client__title, .team-list__title, .team__title, .education__title {
+  color: #212121;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
 body {
-  background-color: var(--prymary-white-color);
-  color: var(--secondary-color-text);
+  background-color: #FFFFFF;
+  color: #757575;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -23,25 +37,11 @@ p {
   padding-bottom: 94px;
 }
 
-.list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
 .container {
   width: 1200px;
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.section-title {
-  color: #212121;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
 }
 
 header {
